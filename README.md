@@ -49,7 +49,7 @@ Tested on: **Oppo Pad Mini OPD2515, ColorOS 17.0.0.104 (CN01), Android 17**. Req
 | Draw over other apps, storage, camera, notifications | **Not needed** | The app declares no permissions. The selection screen is a normal full-screen activity, not an overlay. |
 | Breeno, gesture navigation, other assistant settings | **Leave as they are** | The app does not change them. |
 
-To stop using it, switch the service off in Accessibility or uninstall the app. The app writes nothing outside its private cache.
+To stop using it, switch the service off in Accessibility or uninstall the app. The app writes nothing outside its own private storage (cached screenshots and the language choice).
 
 The app UI is available in English and Vietnamese (Follow system / English / Tiếng Việt). Tap the gear in the corner of the selection screen to change it.
 
