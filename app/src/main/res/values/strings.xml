@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Screen Lens</string>
+    <string name="settings_label">Screen Lens settings</string>
+    <string name="service_description">Open the \"Screen Lens\" icon (for example from the sidebar) to capture the current screen and send it to Google Lens.</string>
+    <string name="status_off">Turn on \"Screen Lens\" in Accessibility</string>
+    <string name="error_capture">Could not capture the screen (code %1$d)</string>
+    <string name="error_save">Could not save the screenshot</string>
+    <string name="select_hint">Circle the area to search. Tap quickly to search the whole screen.</string>
+    <string name="error_no_lens">Google Lens is not installed</string>
+    <string name="settings_title">Screen Lens</string>
+    <string name="language_title">Language</string>
+    <string name="language_system">Follow system</string>
+    <string name="language_vi">Tiếng Việt</string>
+    <string name="language_en">English</string>
+    <string name="a11y_title">Accessibility service</string>
+    <string name="a11y_on">On: ready to capture</string>
+    <string name="a11y_off">Off: Screen Lens cannot capture until it is turned on</string>
+    <string name="a11y_open">Open Accessibility settings</string>
+</resources>

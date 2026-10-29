@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lens màn hình</string>
+    <string name="settings_label">Cài đặt Lens màn hình</string>
+    <string name="service_description">Mở biểu tượng \"Lens màn hình\" (ví dụ từ thanh bên) để chụp màn hình hiện tại và đưa vào Google Ống kính.</string>
+    <string name="status_off">Hãy bật \"Lens màn hình\" trong Hỗ trợ tiếp cận</string>
+    <string name="error_capture">Không chụp được màn hình (mã %1$d)</string>
+    <string name="error_save">Không lưu được ảnh chụp</string>
+    <string name="select_hint">Khoanh vùng cần tìm. Chạm nhanh để tìm cả màn hình.</string>
+    <string name="error_no_lens">Chưa cài Google Ống kính</string>
+    <string name="settings_title">Lens màn hình</string>
+    <string name="language_title">Ngôn ngữ</string>
+    <string name="language_system">Theo hệ thống</string>
+    <string name="language_vi">Tiếng Việt</string>
+    <string name="language_en">English</string>
+    <string name="a11y_title">Dịch vụ trợ năng</string>
+    <string name="a11y_on">Đang bật: sẵn sàng chụp</string>
+    <string name="a11y_off">Đang tắt: chưa thể chụp cho tới khi bật</string>
+    <string name="a11y_open">Mở cài đặt Hỗ trợ tiếp cận</string>
+</resources>
