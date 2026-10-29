@@ -29,14 +29,27 @@ It is not identical to Google's Circle to Search: Lens opens full screen instead
 
 The app declares no permissions, including INTERNET. Screenshots live in the app's private cache and are only readable by the Google app while being sent to Lens. Old screenshots are deleted on the next capture. The accessibility service only uses the screenshot capability (`canTakeScreenshot`); it does not read screen content or events.
 
-## Install
+## Install and setup
 
 Tested on: **Oppo Pad Mini OPD2515, ColorOS 17.0.0.104 (CN01), Android 17**. Requires Android 11+ (`minSdk 30`). Other devices are untested.
 
-1. Download `screen-lens-1.0-debug.apk` from [Releases](../../releases) (or the [`apk/`](apk) folder) and install it. ColorOS asks you to confirm an install from an unknown source. The APK is signed with the debug key.
-2. Go to **Settings > Accessibility > Screen Lens** and turn the service on.
-3. Have the **Google app** (with Google Lens) installed and Google services working. The app sends the image to `com.google.android.googlequicksearchbox` and falls back to `com.google.ar.lens`.
+1. Download `screen-lens-1.0-debug.apk` from [Releases](../../releases) (or the [`apk/`](apk) folder) and install it. The APK is signed with the debug key. If you install it from a file manager or browser, Android asks you to allow that app to **install unknown apps**.
+2. Turn the service on: **Settings > Accessibility > Screen Lens**, switch it **on**. This is the only switch the app needs.
+3. Make sure the **Google app** (which provides Google Lens) is installed and Google services work. Lens fetches a sign-in token from Google Play services, so it needs a network path to Google.
 4. Add the "Screen Lens" icon to the smart sidebar or home screen and tap it to use.
+
+### Switches checklist
+
+| Setting | Needed? | Notes |
+| --- | --- | --- |
+| Accessibility > Screen Lens | **Required** | Without it the app cannot capture the screen, and tapping the icon opens Accessibility settings instead. |
+| Allow restricted settings | Only if step 2's switch is greyed out | On Android 13+ an app installed from outside a store can have accessibility locked. Go to **Settings > Apps > Screen Lens**, open the **⋮** menu at the top right, choose **Allow restricted settings**, then try step 2 again. Not seen on the test device, which was installed through adb. |
+| Background activity / auto-start, lock in recents | Recommended | ColorOS may force-stop the app, which turns the service off (see Troubleshooting). Names and paths vary by ColorOS version. |
+| VPN or Wi-Fi toggle | Only if Lens says "no network" | See Troubleshooting. |
+| Draw over other apps, storage, camera, notifications | **Not needed** | The app declares no permissions. The selection screen is a normal full-screen activity, not an overlay. |
+| Breeno, gesture navigation, other assistant settings | **Leave as they are** | The app does not change them. |
+
+To stop using it, switch the service off in Accessibility or uninstall the app. The app writes nothing outside its private cache.
 
 The app UI is available in English and Vietnamese (Follow system / English / Tiếng Việt). Tap the gear in the corner of the selection screen to change it.
 
