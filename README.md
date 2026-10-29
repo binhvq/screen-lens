@@ -2,6 +2,12 @@
 
 Restores a partial **Circle to Search** (circle an area to search it with Google Lens) on **ColorOS China-ROM** devices, where the feature is blocked at the ROM level. No root required.
 
+## Demo
+
+![Screen Lens demo: circle an area, get Google Lens results](docs/media/screen-lens-demo.gif)
+
+[Full-quality video (MP4)](docs/media/screen-lens-demo.mp4). Recorded on the test device with the touch indicator turned on. The photo is NASA's public-domain "The Earth seen from Apollo 17". The app was started with an adb command in this recording, which does the same thing as tapping its icon. Lens shows Vietnamese text because the device language is Vietnamese; the result describes southern Africa and Madagascar, the area that was circled.
+
 ## What it does
 
 On Oppo's China ROM, long-pressing Home/the gesture bar or the power button only starts the Breeno assistant, never Gemini or Circle to Search. On an Oppo Pad Mini (OPD2515, ColorOS 17 CN) I found:
